@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+datasets/
+*.npy
+*.safetensors
+.env
+.venv
+venv/
+ENV/
+.idea/
+.vscode/
+*.egg-info/
+dist/
+build/

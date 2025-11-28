@@ -1,0 +1,27 @@
+{
+  "scifact": {
+    "nDCG@10": 0.7036,
+    "Recall@10": 0.8362,
+    "time": 69.1,
+    "docs": 5183,
+    "queries": 300
+  },
+  "nfcorpus": {
+    "nDCG@10": 0.3381,
+    "Recall@10": 0.1654,
+    "time": 52.4,
+    "docs": 3633,
+    "queries": 323
+  },
+  "trec-covid": {
+    "nDCG@10": 0.7226,
+    "Recall@10": 0.0209,
+    "time": 1556.7,
+    "docs": 171332,
+    "queries": 50
+  },
+  "average": {
+    "nDCG@10": 0.5881,
+    "Recall@10": 0.3408
+  }
+}
