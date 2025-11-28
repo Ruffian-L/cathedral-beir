@@ -91,3 +91,7 @@ MIT
 - [BEIR Benchmark](https://github.com/beir-cellar/beir) for evaluation framework
 - [Nomic AI](https://www.nomic.ai/) for the embedding model
 - [Sentence Transformers](https://www.sbert.net/) for the encoding library
+
+---
+
+**By Jason Van Pham, in collaboration with Grok, Claude, and Gemini.**
