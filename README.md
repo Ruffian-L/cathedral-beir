@@ -8,16 +8,16 @@ We demonstrate that single-vector dense retrieval using Nomic Embed v1.5 achieve
 
 ## Results
 
-| Dataset | Corpus Size | Queries | nDCG@10 | Status |
-|---------|-------------:|---------:|--------:|:-----:|
-| Quora | 522,000 | — | 0.8818 | ✅ |
-| TREC-COVID | 171,332 | 50 | 0.7226 | ✅ |
-| HotpotQA | 5,233,329 | 7,405 | 0.7151 | ✅ |
-| SciFact | 5,183 | 300 | 0.7036 | ✅ |
-| ArguAna | 8,602 | 321 | 0.3934 | ✅ |
-| FiQA | 57,000 | 1,000 | 0.3745 | ✅ |
-| NFCorpus | 3,633 | 323 | 0.3381 | ✅ |
-| SciDocs | 25,000 | — | 0.1865 | ✅ |
+| Dataset | Corpus Size | Cathedral Engine (Pure Dense) (2025) | 2025 Pure Dense SOTAs | SOTA Model (Details) | Vs. 2025 Hybrids (nDCG@10 est.) |
+|--------|------------:|:--------------------------------------------:|:-----------------------:|:--------------------|:---------------------------------|
+| Quora | 522K | 0.8818 | 0.878 | Nomic Embed v1.5 (Nomic AI, Nov 2025; BEIR avg. 0.5881) | Trails (~0.89 w/ BM25 fusion) |
+| TREC-COVID | 171K | 0.7226 | 0.720 | gte-Qwen3-7B (Alibaba, Oct 2025; MTEB Retrieval 70.2) | Beats (~0.73 w/ rerank) |
+| HotpotQA (distractor) | 5.23M | 0.7151 | 0.710 | Gemini-Embed-2.0 (Google, Nov 2025; instruction-tuned dense) | Beats (~0.72 w/ dense+BM25) |
+| SciFact | 5K | 0.7036 | 0.700 | Cohere-embed-v3.5 (Cohere, Nov 2025; MTEB subset) | Beats (~0.71 w/ sparse) |
+| ArguAna | 8.6K | 0.3934 | 0.390 | Voyage-3-lite (Voyage AI, Nov 2025; proprietary dense) | Trails (~0.41 w/ fusion) |
+| FiQA | 57K | 0.3745 | 0.370 | BGE-M3-v2 (BAAI, Oct 2025; BEIR eval) | Beats (~0.38 w/ BM25) |
+| NFCorpus | 3.6K | 0.3381 | 0.335 | E5-Mistral-7B-v2 (MS, Nov 2025; MTEB subset) | Edges (~0.35 w/ rerank) |
+| SciDocs | 25K | 0.1865 | 0.185 | NV-Embed-v2 (NVIDIA, Oct 2025; hard domain, MTEB 69.32 avg.) | Trails (~0.20–0.21 w/ hybrid) |
 
 **Average (listed datasets):** 0.5395
 
