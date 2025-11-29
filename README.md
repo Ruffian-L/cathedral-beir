@@ -8,12 +8,18 @@ We demonstrate that single-vector dense retrieval using Nomic Embed v1.5 achieve
 
 ## Results
 
-| Dataset | Corpus Size | Queries | nDCG@10 |
-|---------|-------------|---------|---------|
-| SciFact | 5,183 | 300 | **0.7036** |
-| NFCorpus | 3,633 | 323 | **0.3381** |
-| TREC-COVID | 171,332 | 50 | **0.7226** |
-| **Average** | - | - | **0.5881** |
+| Dataset | Corpus Size | Queries | nDCG@10 | Status |
+|---------|-------------:|---------:|--------:|:-----:|
+| Quora | 522,000 | — | 0.8818 | ✅ |
+| TREC-COVID | 171,332 | 50 | 0.7226 | ✅ |
+| HotpotQA | 5,233,329 | 7,405 | 0.7151 | ✅ |
+| SciFact | 5,183 | 300 | 0.7036 | ✅ |
+| ArguAna | 8,602 | 321 | 0.3934 | ✅ |
+| FiQA | 57,000 | 1,000 | 0.3745 | ✅ |
+| NFCorpus | 3,633 | 323 | 0.3381 | ✅ |
+| SciDocs | 25,000 | — | 0.1865 | ✅ |
+
+**Average (listed datasets):** 0.5395
 
 ### Comparison with Prior Work
 
